@@ -1,0 +1,31 @@
+
+<div ng-controller="FormationCtrl as formation">
+    <table class="table table-striped">
+        <thead>
+            <th>Code Formation</th>
+            <th>Nom Formation</th>
+            <th></th>
+        </thead>
+        <tbody>
+        <tr ng-repeat="item in formations">
+                <td><a href="#/Clientformation/{{item.codeFormation}}">{{item.codeFormation}}</a></td>
+                <td><a href="#/Clientformation/{{item.codeFormation}}">{{item.nomFormation}}</a></td>
+                <td>
+                 <button type="button" class="btn btn-default btn-sm" ng-click="deleteFormation(item.codeFormation)">
+                   <span class="glyphicon glyphicon-trash"></span> Supprimer</button>
+                 <a href="#/Updateformation/{{item.codeFormation}}">
+                   <button type="button" class="btn btn-default btn-sm">
+                   <span class="glyphicon glyphicon-edit"></span> Modifier
+                   </button>
+                 </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <a class="btn btn-default" href="#/Ajouterformation" role="button">Ajouter formation</a>
+    </div>
+
+
+
+</div>

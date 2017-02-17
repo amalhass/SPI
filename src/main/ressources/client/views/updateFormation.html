@@ -1,0 +1,61 @@
+<div ng-controller="FormationUpdateCtrl">
+
+    <form class="form-horizontal" ng-submit="updateFormation()">
+        <div class="form-group">
+            <label  class="col-sm-2 control-label"><h4>Modifier Formation</h4></label>
+            <div class="col-sm-10">
+            </div>
+        </div>
+        <div class="form-group">
+            <label  class="col-sm-2 control-label">Code Formation</label>
+            <div class="col-sm-10">
+                <input ng-model="formation.codeFormation" type="text" class="form-control"  placeholder="Code Formation" disabled>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Nom Formation</label>
+            <div class="col-sm-10">
+                <input ng-model="formation.nomFormation" type="text" class="form-control"  placeholder="Nom formation">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Nombre d'année</label>
+            <div class="col-sm-10">
+                <input ng-model="formation.n0Annee" type="number" class="form-control"  placeholder="Nombre d'année">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Diplome</label>
+            <div class="col-sm-10">
+                <input ng-model="formation.diplome"type="text" class="form-control"  placeholder="Diplome">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Double Diplome</label>
+            <div class="col-sm-10">
+                <input ng-model="formation.doubleDiplome"type="text" class="form-control"  placeholder="double Diplome">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Debut accrédiation</label>
+            <div class="col-sm-10">
+                <input ng-model="formation.debutAccrediation"type="date" class="form-control"  placeholder="debut accrédiation">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Fin accrédiation</label>
+            <div class="col-sm-10">
+                <input ng-model="formation.finAccrediation" type="date" class="form-control"  placeholder="Fin accrédiation">
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Update</button>
+            </div>
+        </div>
+    </form>
+</div>

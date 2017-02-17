@@ -1,0 +1,34 @@
+
+<div ng-controller="EnseignantCtrl">
+    <table class="table table-striped">
+        <thead>
+        <th>Numero Enseignant</th>
+        <th>Nom Enseignant</th>
+        <th>Prenom Enseignant</th>
+        <th></th>
+        </thead>
+        <tbody>
+        <tr ng-repeat="item in enseignants">
+            <td><a href="#/Clientenseignant/{{item.noEnseignant}}">{{item.noEnseignant}}</a></td>
+            <td><a href="#/Clientenseignant/{{item.noEnseignant}}">{{item.nom}}</a></td>
+            <td><a href="#/Clientenseignant/{{item.noEnseignant}}">{{item.prenom}}</a></td>
+            <td>
+                <button type="button" class="btn btn-default btn-sm" ng-click="deleteEnseignant(item.noEnseignant)" >
+                    <span class="glyphicon glyphicon-trash"></span> Supprimer
+                </button>
+                <a href="#/UpdateEnseignant/{{item.noEnseignant}}">
+                    <button type="button" class="btn btn-default btn-sm">
+                        <span class="glyphicon glyphicon-edit"></span> Modifier
+                    </button>
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div>
+        <a class="btn btn-default" href="#/AjouterEnseignant" role="button">Ajouter Enseignant</a>
+    </div>
+
+
+
+</div>
